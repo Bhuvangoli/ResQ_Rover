@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+.env
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node.js
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Storage (runtime data - not committed)
+storage/blueprints/
+storage/images/
+storage/recordings/
+storage/exports/
+storage/logs/
+
+# Database files (should not exist - using in-memory only)
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/settings.json
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.zip
+ResQ_Rover_PRDs_Updated/

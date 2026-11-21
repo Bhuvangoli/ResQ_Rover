@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-[#0f1117] text-slate-200 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#1a1d27];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-[#1a1d27] border border-[#2a2d3a] rounded-xl p-4;
+  }
+
+  .btn-primary {
+    @apply bg-orange-600 hover:bg-orange-500 text-white font-medium px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-[#0f1117] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-200 font-medium px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-[#0f1117] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-danger {
+    @apply bg-red-700 hover:bg-red-600 text-white font-medium px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-[#0f1117] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .status-dot {
+    @apply inline-block w-2.5 h-2.5 rounded-full;
+  }
+
+  .metric-value {
+    @apply text-2xl font-bold font-mono text-white;
+  }
+
+  .metric-label {
+    @apply text-xs font-medium uppercase tracking-wider text-slate-400;
+  }
+
+  .metric-unit {
+    @apply text-sm text-slate-400;
+  }
+
+  .alert-critical {
+    @apply border-red-500 bg-red-950/30;
+  }
+
+  .alert-warning {
+    @apply border-yellow-500 bg-yellow-950/30;
+  }
+
+  .alert-info {
+    @apply border-blue-500 bg-blue-950/30;
+  }
+
+  .sim-badge {
+    @apply inline-flex items-center gap-1 text-xs font-medium bg-purple-900/60 text-purple-300 border border-purple-700/50 px-2 py-0.5 rounded-full;
+  }
+}
